@@ -2,5 +2,8 @@
 - hosts: db
   tasks:
     - name: Install MariaDB
-      apt: name=mariadb-server state=present update_cache=yes
+      apt: 
+        name: mariadb-server 
+        state: present 
+        update_cache: yes
       become: true
